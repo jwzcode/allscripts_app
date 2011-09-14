@@ -20,6 +20,7 @@ namespace nothinbutdotnetstore
 
         public int add(int first, int second)
         {
+            connection.Open();
             ensure_all_are_positive(first, second);
 
             return first + second;
