@@ -14,7 +14,7 @@ namespace nothinbutdotnetstore.web.core.stubs
         public IEnumerator<IProcessARequest> GetEnumerator()
         {
             yield return new RequestHandlingCommand(x => true,
-                                                    new ViewTheDepartmentsInADepartment());
+                                                    new ViewProductsInADepartment());
         }
     }
 }

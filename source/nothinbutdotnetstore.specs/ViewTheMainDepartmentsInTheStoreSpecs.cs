@@ -21,11 +21,11 @@ namespace nothinbutdotnetstore.specs
             Establish c = () =>
             {
                 all_main_departments = new List<Department>{new Department()};
-                department_repository = depends.on<ICanGetDepartments>();
+                information_from_the_store_catalog_repository = depends.on<ICanGetInformationFromTheStoreCatalog>();
                 display_engine = depends.on<IDisplayReports>();
                 request = fake.an<IContainRequestInformation>();
 
-                department_repository.setup(x => x.get_the_main_departments_in_the_store())
+                information_from_the_store_catalog_repository.setup(x => x.get_the_main_departments_in_the_store())
                     .Return(all_main_departments);
 
             };
@@ -34,7 +34,7 @@ namespace nothinbutdotnetstore.specs
                 sut.process(request);
 
             It should_get_a_list_of_the_main_departments_in_the_store = () =>
-                department_repository.received(x => x.get_the_main_departments_in_the_store());
+                information_from_the_store_catalog_repository.received(x => x.get_the_main_departments_in_the_store());
 
             It should_display_the_main_departments = () =>
                 display_engine.received(x => x.display(all_main_departments));
@@ -42,7 +42,7 @@ namespace nothinbutdotnetstore.specs
                 
 
             static IContainRequestInformation request;
-            static ICanGetDepartments department_repository;
+            static ICanGetInformationFromTheStoreCatalog information_from_the_store_catalog_repository;
             static IEnumerable<Department> all_main_departments;
             static IDisplayReports display_engine;
         }

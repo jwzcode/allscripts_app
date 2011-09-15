@@ -21,11 +21,11 @@ namespace nothinbutdotnetstore.specs
             {
                 all_sub_departments = new List<Department> {new Department()};
                 parent_department = new Department();
-                department_repository = depends.on<ICanGetDepartments>();
+                information_from_the_store_catalog_repository = depends.on<ICanGetInformationFromTheStoreCatalog>();
                 display_engine = depends.on<IDisplayReports>();
                 request = fake.an<IContainRequestInformation>();
 
-                department_repository.setup(x => x.get_the_departments_in(parent_department))
+                information_from_the_store_catalog_repository.setup(x => x.get_the_departments_in(parent_department))
                     .Return(all_sub_departments);
 
                 request.setup(x => x.map<Department>()).Return(parent_department);
@@ -38,7 +38,7 @@ namespace nothinbutdotnetstore.specs
                 display_engine.received(x => x.display(all_sub_departments));
 
             static IContainRequestInformation request;
-            static ICanGetDepartments department_repository;
+            static ICanGetInformationFromTheStoreCatalog information_from_the_store_catalog_repository;
             static IEnumerable<Department> all_sub_departments;
             static IDisplayReports display_engine;
             static Department parent_department;
