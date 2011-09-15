@@ -1,0 +1,10 @@
+Microsoft (R) Visual C# 2010 Compiler version 4.0.30319.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+source\nothinbutdotnetstore\web\application\ViewTheDepartmentsInADepartment.cs(5,18): error CS0101: The namespace 'nothinbutdotnetstore.web.application' already contains a definition for 'ViewTheDepartmentsInADepartment'
+source\nothinbutdotnetstore\web\application\ViewAMainDepartment.cs(8,18): (Location of symbol related to previous error)
+(in c:/users/jp/repositories/github/dwp/app)
+********************You may want to consider changing the value of the setting remotes in the file c:/users/jp/repositories/github/dwp/app/build/configuration/git.rb*********************************
+About to process template: source/config/log4net.config.xml.erb
+About to process template: source/config/web.config.erb
+F, [2011-09-15T16:55:18.419992 #3572] FATAL -- : CSC Failed. See Build Log For Detail
