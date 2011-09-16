@@ -1,5 +1,4 @@
-﻿using System;
-using System.Web;
+﻿using System.Web;
 using nothinbutdotnetstore.web.core.stubs;
 
 namespace nothinbutdotnetstore.web.core
@@ -9,7 +8,7 @@ namespace nothinbutdotnetstore.web.core
         IProcessRequests front_controller;
         ICreateRequests request_factory;
 
-        public RawHttpHandler():this(new FrontController(),new StubRequestFactory())
+        public RawHttpHandler() : this(new FrontController(), Stub.with<StubRequestFactory>())
         {
         }
 

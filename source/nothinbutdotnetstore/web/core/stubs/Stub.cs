@@ -2,7 +2,7 @@
 {
     public class Stub
     {
-         public static StubType With<StubType>() where StubType : new()
+         public static StubType with<StubType>() where StubType : new()
          {
              return new StubType();
          }

@@ -15,7 +15,7 @@ namespace nothinbutdotnetstore.web.application
             this.display_engine = display_engine;
         }
 
-        public ViewProductsInADepartment() : this(Stub.With<StubStoreCatalog>(), Stub.With<StubDisplayEngine>())
+        public ViewProductsInADepartment() : this(Stub.with<StubStoreCatalog>(), Stub.with<StubDisplayEngine>())
         {
         }
 
