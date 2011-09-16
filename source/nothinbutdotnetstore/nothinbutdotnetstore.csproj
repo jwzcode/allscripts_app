@@ -82,7 +82,7 @@
     <Compile Include="web\application\Department.cs" />
     <Compile Include="web\application\ICanGetInformationFromTheStoreCatalog.cs" />
     <Compile Include="web\application\stubs\StubStoreCatalog.cs" />
-    <Compile Include="web\application\ViewAMainDepartment.cs" />
+    <Compile Include="web\application\ViewTheDepartmentsInADepartment.cs" />
     <Compile Include="web\application\ViewProductsInADepartment.cs" />
     <Compile Include="web\application\ViewTheMainDepartmentsInTheStore.cs" />
     <Compile Include="web\core\aspnet\WebFormDisplayEngine.cs" />
