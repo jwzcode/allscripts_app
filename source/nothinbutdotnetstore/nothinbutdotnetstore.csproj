@@ -85,6 +85,7 @@
     <Compile Include="web\application\ViewAMainDepartment.cs" />
     <Compile Include="web\application\ViewProductsInADepartment.cs" />
     <Compile Include="web\application\ViewTheMainDepartmentsInTheStore.cs" />
+    <Compile Include="web\core\aspnet\WebFormDisplayEngine.cs" />
     <Compile Include="web\core\CommandRegistry.cs" />
     <Compile Include="web\core\FrontController.cs" />
     <Compile Include="web\core\IDisplayReports.cs" />
