@@ -97,6 +97,7 @@
     <Compile Include="web\core\RawHttpHandler.cs" />
     <Compile Include="web\core\RequestCriteria.cs" />
     <Compile Include="web\core\RequestHandlingCommand.cs" />
+    <Compile Include="web\core\stubs\Stub.cs" />
     <Compile Include="web\core\stubs\StubDisplayEngine.cs" />
     <Compile Include="web\core\stubs\StubMissingCommand.cs" />
     <Compile Include="web\core\stubs\StubRequestFactory.cs" />
